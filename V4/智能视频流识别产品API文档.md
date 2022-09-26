@@ -399,6 +399,7 @@ audioDetail中auxInfo的内容如下：
 | --- | --- | --- | --- | --- |
 | beginProcessTime | int | 辅助参数 | 是 | 开始处理的时间（13位时间戳） |
 | finishProcessTime | int | 辅助参数 | 是 | 结束处理的时间（13位时间戳） |
+| passThrough | json_object | 透传字段 | 否 | 该字段内容与请求参数data中extra的passThrough的值相同 |
 | userId | int | 声网用户账号标识 | 否 |仅分流情况下存在，返回的userId是实际房间中的用户id，与请求参数中的uid无关。 |
 | strUserId | string | trtc流的用户id字段 | 否 | 分流的用户id（`TRTC`流才会有） |
 | room | string | 房间号 | 否 | |
